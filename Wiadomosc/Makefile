@@ -1,6 +1,6 @@
 PROJECT_ROOT = $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 
-OBJS = main.o
+OBJS = main.o kolejka.o
 
 ifeq ($(BUILD_MODE),debug)
 	CFLAGS += -g
@@ -13,7 +13,7 @@ else
     $(error Build mode $(BUILD_MODE) not supported by this Makefile)
 endif
 
-all:	Wiadomosc
+all:	Wiadomosc 
 
 Wiadomosc:	$(OBJS)
 	$(CXX) $(LDFLAGS) -o $@ $^

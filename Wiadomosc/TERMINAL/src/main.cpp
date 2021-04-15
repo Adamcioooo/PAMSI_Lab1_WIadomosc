@@ -6,7 +6,7 @@
 #include "kolejka.hh"
 using namespace std;
 
-#define ROZMIAR 1000							//Stala zawierajaca maksymalny rozmiar wiadomosci
+#define ROZMIAR 10000							//Stala zawierajaca maksymalny rozmiar wiadomosci
 
 
 //Funkcja losuje liczby i wstawia przetasowana wiadomosc do listy
